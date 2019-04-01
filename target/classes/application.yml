@@ -1,0 +1,51 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/springboot?useSSL=false
+    username: root
+    password: xiaochao
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialization-mode: ALWAYS
+    schema-username: root
+    schema-password: xiaochao
+    schema:
+      - classpath:schema.sql
+    data-username: root
+    data-password: xiaochao
+#    hikari:
+#      username: root
+#      password: xiaochao
+#      jdbc-url: jdbc:mysql://localhost:3306/springboot?useSSL=false
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      schema:
+#        - classpath:schema.sql
+  thymeleaf: 
+    cache: false
+    
+
+#MapperDaoInterface若是用注解的方式实现SQL的话就用不着/mapper/*.xml配置
+mybatis:
+#  mapper-locations: classpath:mybatis/mapper/*.xml
+#  config-location: classpath:mybatis/mybatis-config.xml
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰标识 表：user_name  --->  JavaBean：userName
+
+#配置com.example.jdbc.dao包下的mapper接口类的日志级别，配上此日志控制台会打印SQL
+logging:
+  level:
+    com:
+      example:
+        jdbc:
+          dao: debug
+
+#不用 springboot的redisTemplate,所以不用Springboot自身集成的redis配置
+redis: 
+  host: localhost
+  port: 6379
+  timeout: 3
+  passpord: xiaochao
+  poolMaxTotal: 10
+  poolMaxIdle: 10
+  poolMaxWait: 3
+  passport: xiaochao
+  

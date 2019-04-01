@@ -1,0 +1,63 @@
+{
+  "groups": [
+    {
+      "name": "redis",
+      "type": "com.everjiankang.miaosha.redis.RedisConfig",
+      "sourceType": "com.everjiankang.miaosha.redis.RedisConfig"
+    },
+    {
+      "name": "spring.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.everjiankang.miaosha.config.MyConfig",
+      "sourceMethod": "public javax.sql.DataSource dataSource() "
+    }
+  ],
+  "properties": [
+    {
+      "name": "redis.host",
+      "type": "java.lang.String",
+      "sourceType": "com.everjiankang.miaosha.redis.RedisConfig"
+    },
+    {
+      "name": "redis.passpord",
+      "type": "java.lang.String",
+      "sourceType": "com.everjiankang.miaosha.redis.RedisConfig"
+    },
+    {
+      "name": "redis.passport",
+      "type": "java.lang.String",
+      "sourceType": "com.everjiankang.miaosha.redis.RedisConfig"
+    },
+    {
+      "name": "redis.pool-max-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.everjiankang.miaosha.redis.RedisConfig"
+    },
+    {
+      "name": "redis.pool-max-total",
+      "type": "java.lang.Integer",
+      "sourceType": "com.everjiankang.miaosha.redis.RedisConfig"
+    },
+    {
+      "name": "redis.pool-max-wait",
+      "type": "java.lang.Integer",
+      "sourceType": "com.everjiankang.miaosha.redis.RedisConfig"
+    },
+    {
+      "name": "redis.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.everjiankang.miaosha.redis.RedisConfig"
+    },
+    {
+      "name": "redis.timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.everjiankang.miaosha.redis.RedisConfig"
+    },
+    {
+      "name": "redis.username",
+      "type": "java.lang.String",
+      "sourceType": "com.everjiankang.miaosha.redis.RedisConfig"
+    }
+  ],
+  "hints": []
+}
